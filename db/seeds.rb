@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 IMAGE_LIST = [
-  'https://i.imgur.com/CzZi90I.jpeg',
-  'https://i.imgur.com/Syadvfl.jpg',
-  'https://i.imgur.com/ncW0Zsh.jpg',
-  'https://i.imgur.com/sjEXS1q.jpg'
+  ['https://i.imgur.com/CzZi90I.jpeg', 'animal, owl'],
+  ['https://i.imgur.com/Syadvfl.jpg', 'animal, dog'],
+  ['https://i.imgur.com/ncW0Zsh.jpg', 'animal, cat'],
+  ['https://i.imgur.com/sjEXS1q.jpg', 'animal, cat']
 ].freeze
 
-IMAGE_LIST.each do |url|
-  Image.create!(url: url)
+IMAGE_LIST.each do |url, tag_list|
+  Image.create!(url: url, tag_list: tag_list)
 end
