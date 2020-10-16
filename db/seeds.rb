@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+IMAGE_LIST = [
+  'https://i.imgur.com/CzZi90I.jpeg',
+  'https://i.imgur.com/Syadvfl.jpg',
+  'https://i.imgur.com/ncW0Zsh.jpg',
+  'https://i.imgur.com/sjEXS1q.jpg'
+].freeze
+
+IMAGE_LIST.each do |url|
+  Image.create!(url: url)
+end
