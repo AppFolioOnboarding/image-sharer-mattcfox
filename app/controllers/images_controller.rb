@@ -16,6 +16,10 @@ class ImagesController < ApplicationController
     @image = Image.find(params[:id])
   end
 
+  def index
+    @images = Image.order(id: :desc)
+  end
+
   private
 
   def image_params
