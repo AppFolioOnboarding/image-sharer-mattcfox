@@ -14,7 +14,9 @@
   <% end %>
   <div>
     <%= form.label :url %><br>
-    <%= form.text_field :url %>
+    <%= form.text_field :url %><br>
+    <%= form.label "Tags(comma separated)" %><br>
+    <%= form.text_field :tag_list %><br>
   </div>
   <div>
     <%= form.submit %>
